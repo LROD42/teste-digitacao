@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typing Test</title>
+    <!--Style-->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="container">
+        <div class="stats">
+            <p>Tempo: <span id="timer">60s</span></p>
+            <p>Erros: <span id="mistakes">0</span></p>
+        </div>
+        <div id="quote" onmousedown="return false" onselectstart="return false"></div>
+        <textarea  id="quote-input" rows="3" placeholder="Aperte iniciar e começe a digitar aqui"></textarea>
+        <button id="start-test" onclick="startTest()">Começar Teste</button>
+        <button id="stop-test" onclick="displayResult()">Parar Teste</button>
+        <div class="result">
+            <h3>Resultado: </h3>
+            <div class="wrapper">
+                <p>Precisão: <span id="accuracy"></span></p>
+                <p>Velocidade: <span id="wpm"></span></p>
+            </div>
+        </div>
+    </div>  
+    <!--Scripts-->
+    <script src="app.js"></script>
+</body>
+</html>
